@@ -1,0 +1,55 @@
+@import "tools";
+
+nav{
+  display: flex;
+  max-width: 1440px;
+  background-color:  $nav-bg;
+  box-shadow: $main-shadow;
+  align-items: center;
+  margin: 0 auto;
+  padding:  0 12%;
+  height: 50px;
+  @include nav-text;
+  .nav {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    .nav-item {
+      list-style-type: none;
+      margin: 0 2%;
+      a {
+        @include nav-text;
+        text-decoration: none;
+      }
+    }
+  }
+  .login-btn {
+    margin-left: auto;
+    background-color:  $main-bg;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+
+    }
+  }
+  .get-started {
+    margin-left: 2%;
+    @include btn;
+    padding: 6px 18px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+@media all  and (max-width: 660px) {
+  nav {
+    justify-content: space-between;
+    .no-mobile {
+      display: none;
+    }
+
+  }
+}
