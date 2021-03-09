@@ -18,7 +18,8 @@ function browsersync(){
 
 function scripts(){
     return src([
-        'src/js/**/*.js'
+        'src/js/main.js',
+        'src/js/loginForm.js'
     ])
         .pipe(concat('main.min.js')) //file
         .pipe(uglify()) // min
@@ -46,8 +47,8 @@ function images () {
 
 function startWatch(){
     watch('src/**/*.scss', styles);
-    watch(['app/**/*.js', '!app/**/**.min.js'],scripts);
-    watch ('app/**/*.html').on('change', browserSync.reload);
+    watch(['src/**/*.js', '!src/**/**.min.js'],scripts);
+    watch ('src/**/*.html').on('change', browserSync.reload);
 }
 exports.browsersync=browsersync;
 exports.scripts=scripts;

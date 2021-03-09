@@ -2,11 +2,10 @@
 
 nav{
   display: flex;
-  max-width: 1440px;
+  width: 100%;
   background-color:  $nav-bg;
   box-shadow: $main-shadow;
   align-items: center;
-  margin: 0 auto;
   padding:  0 12%;
   height: 50px;
   @include nav-text;
@@ -47,6 +46,7 @@ nav{
 @media all  and (max-width: 660px) {
   nav {
     justify-content: space-between;
+    padding: 0 4%;
     .no-mobile {
       display: none;
     }

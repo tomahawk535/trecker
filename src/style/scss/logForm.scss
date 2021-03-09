@@ -48,5 +48,14 @@
         cursor: pointer;
       }
     }
+    &[type=button]{
+      background-color: red;
+      width: 40%;
+      @include btn-middle;
+      color: #fff;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
