@@ -1,0 +1,75 @@
+@import "tools";
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 12%;
+  #features {
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  h2{
+    flex-basis: 100%;
+    margin: 0 auto;
+    text-align: center;
+    @include h2;
+  }
+  p {
+    flex-basis: 100%;
+    margin: 2.375rem 0 4.875rem;
+    text-align: center;
+    @include p-medium;
+
+  }
+  .features-item {
+    flex-basis: 30%;
+    text-align: center;
+    margin-right: 1rem;
+    padding: 0 2.5rem 2rem;
+    h5 {
+      font-family:  $font;
+      color:  $text-color;
+      font-size: 18px;
+      line-height: 23px;
+      margin-top: 0.875rem;
+    }
+    p {
+      @include p-medium;
+      margin: 0.625rem 0;
+
+    }
+    a {
+      text-decoration: none;
+      color:  $btn_link_color;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media all and  (max-width: 800px){
+  .features {
+    .features-item {
+      flex-basis: 100%;
+    }
+  }
+}
+@media all and (max-width: 599px) {
+  .features {
+    padding: 0 4%;
+    p{
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      text-align: left;
+      @include h-mobile;
+    }
+    .features-item {
+      text-align: left;
+      padding: 0 0 1.5rem;
+    }
+  }
+}

@@ -55,6 +55,11 @@ $text-color: #000;
   font-family:  $font;
   color:  $text-color;
 }
+@mixin  h-mobile {
+  font-size: 32px;
+  line-height: 38px;
+
+}
 @mixin p-large {
   font-size: 21px;
   line-height: 32px;
