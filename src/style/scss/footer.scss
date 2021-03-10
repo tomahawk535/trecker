@@ -1,0 +1,11 @@
+@import "tools";
+footer {
+  text-align: center;
+  padding: 7.5em 4% 1rem;
+  a {
+    margin: 0.5rem;
+  }
+  p {
+    @include p-medium;
+  }
+}
