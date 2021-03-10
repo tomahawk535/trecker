@@ -1,0 +1,55 @@
+@import "tools";
+.get_started {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 12% 1rem;
+  justify-content: center;
+  text-align: center;
+  #get-started {
+    margin: 4px 0;
+  }
+  h2 {
+    @include h2;
+    flex-basis: 60%;
+    margin-bottom: 2rem;
+  }
+  p {
+    @include p-medium;
+    flex-basis: 70%;
+    margin-bottom: 3rem;
+    padding: 0 8rem;
+  }
+  input {
+    @include btn-middle;
+    padding: 0.625rem 1rem;
+    &[type=button]{
+      @include btn;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .get_started-email{
+    @include input;
+    flex-basis: 31%;
+    outline: none;
+  }
+}
+@media all and (max-width: 1200px){
+  .get_started {
+    h2,p {
+      flex-basis: 80%;
+    }
+    p{
+      padding: 0 1rem;
+    }
+  }
+}
+@media all and (max-width: 599px){
+  .get_started {
+    padding: 0 4% 1rem;
+    h2, p {
+      flex-basis: 100%;
+    }
+  }
+}
