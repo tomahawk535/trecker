@@ -7,6 +7,7 @@
   text-align: center;
   #get-started {
     margin: 4px 0;
+    color: darkgrey;
   }
   h2 {
     @include h2;
@@ -48,8 +49,12 @@
 @media all and (max-width: 599px){
   .get_started {
     padding: 0 4% 1rem;
+    text-align: left;
     h2, p {
       flex-basis: 100%;
+    }
+    h2 {
+      @include h-mobile;
     }
   }
 }

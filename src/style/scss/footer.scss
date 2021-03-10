@@ -7,5 +7,6 @@ footer {
   }
   p {
     @include p-medium;
+    color: darkgrey;
   }
 }
