@@ -19,7 +19,8 @@ function browsersync(){
 function scripts(){
     return src([
         'src/js/main.js',
-        'src/js/loginForm.js'
+        'src/js/loginForm.js',
+        'src/js/slick-films.js'
     ])
         .pipe(concat('main.min.js')) //file
         .pipe(uglify()) // min

@@ -48,6 +48,14 @@
     }
   }
 }
+.slick-films {
+  margin: 8.125rem 0;
+  .slick-films-item {
+    img {
+      width: 100%;
+    }
+  }
+}
 
 @media all and  (max-width: 800px){
   .features {
