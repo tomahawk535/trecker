@@ -1,0 +1,89 @@
+@import "tools";
+.usage{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 12% 8.75rem;
+  background-image: url("../../img/assets/web-app-mockup.png");
+  background-repeat: no-repeat;
+  background-position:top right;
+  .usage-info {
+    flex-basis: 50%;
+    margin: 4.8125rem 0 0;
+    padding-right: 3rem;
+    h2 {
+      @include h3;
+    }
+    p {
+      @include p-medium;
+      margin: 1.625rem 0 2.375rem;
+    }
+    li {
+      list-style-type: none;
+      margin: 1.5rem 0;
+      @include p-medium;
+      padding: 0.3rem 0;
+      vertical-align: center;
+      img {
+        margin-right: 0.5rem;
+      }
+
+    }
+  }
+  .usage-img {
+    flex-basis: 50%;
+    margin-top: 9.625rem;
+    img {
+      margin-left: -3.75rem;
+
+    }
+
+  }
+}
+@media all and (max-width: 770px){
+  .usage {
+    padding-bottom: 2rem;
+    .usage-info{
+      margin: 0;
+      flex-basis: 100%;
+    }
+    .usage-img {
+      flex-basis: 100%;
+    }
+  }
+}
+@media (min-width: 600px)  and (max-width: 1024px){
+  .usage {
+    background-image: none;
+    .usage-img {
+      margin: 0;
+      img {
+        margin-left: 0;
+      }
+    }
+  }
+
+}
+@media all and (max-width: 599px) {
+  .usage {
+    padding: 0 4% 1rem;
+    background-position: bottom;
+    margin-bottom: 3rem;
+    .usage-info, .usage-img {
+      flex-basis: 100%;
+    }
+    .usage-info {
+      margin-top: 0;
+      h2 {
+        @include h-mobile;
+      }
+    }
+    .usage-img {
+      margin-top: 1rem;
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}

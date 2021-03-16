@@ -1,0 +1,91 @@
+$main-bg: #fff;
+$nav-bg: rgba(255,255,255,0.97);
+$main-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+$btn_link_color: #540CFA;
+$btn-shadow: 0px 2px 4px rgba(60, 9, 179, 0.3);
+$border-radius: 4px;
+$font: 'Source Sans Pro', sans-serif;
+$input-text-shadow: 0 6px 12px rgba(0, 0, 0, 0.05),
+  0 1px 2px rgba(0, 0, 0, 0.05);
+$input-text-border: 0.5px solid rgba(0, 0, 0, 0.05);
+$community-bg: #000;
+$community-text-color: #fff;
+$text-color: #000;
+
+
+@mixin btn {
+  border-radius: $border-radius;
+  box-shadow: $btn-shadow;
+  background-color:  $btn_link_color;
+  font-family: $font;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+@mixin btn_small {
+  font-size: 14px;
+  line-height: 18px;
+}
+@mixin btn-middle {
+  font-size: 16px;
+  line-height: 20px;
+}
+@mixin input {
+  border:  $input-text-border;
+  box-shadow: $input-text-shadow;
+  font-family:  $font;
+  font-size: 16px;
+  line-height: 20px;
+}
+@mixin h1 {
+  font-size: 70px;
+  line-height: 72px;
+  font-family:  $font;
+  color:  $text-color;
+}
+@mixin h2 {
+  font-size: 60px;
+  line-height: 63px;
+  font-family:  $font;
+  color:  $text-color;
+}
+@mixin h3 {
+  font-size: 46px;
+  line-height: 50px;
+  font-family:  $font;
+  color:  $text-color;
+}
+@mixin  h-mobile {
+  font-size: 32px;
+  line-height: 38px;
+
+}
+@mixin p-large {
+  font-size: 21px;
+  line-height: 32px;
+  font-family:  $font;
+  color:  $text-color;
+}
+@mixin p-medium {
+  font-size: 16px;
+  line-height: 24px;
+  font-family:  $font;
+  color:  $text-color;
+}
+@mixin p-small {
+  font-size: 13px;
+  line-height: 20px;
+  font-family:  $font;
+  color:  $text-color;
+}
+@mixin nav-text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family:  $font;
+  color:  $text-color;
+}
+@mixin  vertical-slick {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: #fff;
+}

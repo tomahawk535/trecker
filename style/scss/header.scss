@@ -1,0 +1,124 @@
+@import "tools";
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5.3125rem 12%;
+  background-image: url("../../img/assets/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  .header-info {
+    flex-basis: 60%;
+    padding-right: 9%;
+    padding-top: 7rem;
+    h1 {
+      @include h1;
+    }
+    p {
+      @include p-large;
+      margin: 1.875em 0;
+    }
+    input {
+      @include input;
+      padding: 1rem 1.375rem;
+      outline: none;
+      &[type=button] {
+        @include btn;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .compatible {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 8.125rem;
+      p{
+        flex-basis: 100%;
+        @include p-medium;
+        color: darkgray;
+      }
+    }
+
+  }
+  .header-img {
+    flex-basis: 40%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 917px) and  (max-width: 1230px){
+  header {
+    .header-info {
+      padding-top: 2rem;
+      h1 {
+        @include h2;
+      }
+      p {
+        @include p-small;
+      }
+      .compatible {
+        padding-top: 4rem;
+      }
+    }
+  }
+}
+@media (min-width: 599px) and (max-width: 916px){
+  header {
+    text-align: center;
+    .header-info {
+      flex-basis: 90%;
+      margin: 0 auto;
+      padding-right: 0;
+      .compatible {
+        text-align: left;
+        width: 100%;
+      }
+    }
+    .header-img {
+      flex-basis: 90%;
+      margin: 0 auto;
+      padding-top: 4rem;
+    }
+  }
+}
+@media all  and (max-width: 599px) {
+  header {
+    padding: 2rem 0;
+    .header-info {
+      flex-basis: 100%;
+      padding: 5rem 4%;
+
+      h1 {
+        @include h3;
+      }
+      .compatible {
+        text-align: left;
+        width: 100%;
+        padding-top: 3rem;
+      }
+    }
+    .header-img {
+      flex-basis: 100%;
+      padding-top: 0.5rem;
+      background-image: url("../../img/assets/mobile-header-bg.png");
+      background-position: bottom left;
+      background-repeat: no-repeat;
+    }
+  }
+}
+@media all and (max-width: 376px) {
+  header {
+    .header-info {
+      input {
+        width: 100%;
+        margin: 0.5rem 0;
+
+      }
+    }
+  }
+}
